@@ -36,7 +36,7 @@ Goal: `make up` boots API + Postgres, migrations run clean, `/health` and `/read
 
 | # | Task | Done when |
 | --- | --- | --- |
-| 0.1 | `git init`, `go mod init`, `.gitignore`, `README` skeleton, directory tree from PRD §10 (empty packages with a doc comment each) | `go build ./...` succeeds on an empty tree |
+| ✅ 0.1 | `git init`, `go mod init`, `.gitignore`, `README` skeleton, directory tree from PRD §10 (empty packages with a doc comment each) | `go build ./...` succeeds on an empty tree |
 | 0.2 | `docker-compose.yml`: Postgres 16 with a named volume, healthcheck, and the API service | `docker compose up` gives a Postgres accepting connections |
 | 0.3 | `platform/config`: `caarlos0/env/v11` + `godotenv`, typed `Config` struct, `.env.example` committed | Missing required env var fails fast at startup with a named error |
 | 0.4 | `platform/database`: pgx v5 pool, `shopspring/decimal` type registration, pool tuning, `Ping` | Pool connects; a smoke test round-trips a `NUMERIC` as `decimal.Decimal` |
