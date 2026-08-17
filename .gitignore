@@ -1,0 +1,29 @@
+# Binaries
+/bin/
+/tmp/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Go build/test artifacts
+*.out
+coverage.txt
+coverage.html
+
+# Env files
+.env
+.env.local
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+
+# air live-reload
+air_tmp/
